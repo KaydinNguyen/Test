@@ -45,7 +45,7 @@ public class base {
         driver.get(prop.getProperty("url"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.findElement(By.name("email")).sendKeys("tester@test.com");
+        driver.findElement(By.name("email")).sendKeys("kaydin@dealtap.ca");
         driver.findElement(By.name("password")).sendKeys("Abc12345");
         driver.findElement(By.xpath("//div[text()='Log In']")).click();
         driver.findElement(By.xpath("//div[contains(text(),'Test: Manager')]")).click();
@@ -69,15 +69,24 @@ public class base {
         });
 
         WebElement tm = driver.findElement(By.xpath("//div[@class='testReport-caption']"));
-        List<WebElement> pr = driver.findElements(By.xpath("//div[@class='testReportFlow-tests']"));
-
+        List<WebElement> pr = driver.findElements(By.xpath("//div[@class='testReportResult-caption']"));
+        List<WebElement> header = driver.findElements(By.cssSelector("div[class='testReportTest-caption dt--isClickable']"));
+        
         if (tm.isDisplayed()) {
 
             System.out.println("Test case finished");
-            for (int k = 0; k < pr.size(); k++) {
-
-                System.out.println(pr.get(k).getText());
-
+            
+            for (int k = 0; k < header.size(); k++) {
+            	
+            	header.get(k).click();            
+                //System.out.println(header.get(k).getText().trim());
+            	System.out.println(header.get(k).getAttribute("innerText").trim());
+                for (int i = 0; i < pr.size(); i++) {
+                	
+                	//System.out.println(pr.get(i).getText().trim());
+                	System.out.println(pr.get(i).getAttribute("innerText").trim());
+                }
+                                
             }
         }
 
