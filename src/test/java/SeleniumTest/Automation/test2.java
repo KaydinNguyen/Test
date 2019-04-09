@@ -21,6 +21,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.json.Json;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
@@ -59,15 +60,29 @@ public class test2 extends base {
         if(tm.isDisplayed() ) {
         	
         	Object obj = new JsonParser().parse(tr.getAttribute("data-report"));
-        	JsonObject jo = (JsonObject) obj; 
+        	obj.toString();
         	
-        	JsonArray title = (JsonArray) jo.get("title");
+        	JsonArray jo = (JsonArray) 
         	
-        	Iterator it = title.iterator();
         	
-        	while(it.hasNext()) {
-        		System.out.println(title);
-        	}
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+        	
+//        	JsonObject jo = (JsonObject) obj; 
+//        	
+//        	JsonArray title = (JsonArray) jo.get("title");
+//        	
+//        	Iterator it = title.iterator();
+//        	
+//        	while(it.hasNext()) {
+//        		System.out.println(title);
+//        	}
         	
         	//String runID = (String) jo.get("runId").toString();
 //        	String title = (String) jo.get("title").toString();
