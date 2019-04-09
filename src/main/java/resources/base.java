@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class base {
 
@@ -31,8 +31,8 @@ public class base {
         if (browserName.equals("chrome"))
 
         {
-            WebDriverManager.chromedriver().setup();
-            // System.setProperty("webdriver.chrome.driver","C:\\Users\\Kaydin\\Desktop\\eclipse\\chromedriver.exe");
+//        	WebDriverManager.
+            System.setProperty("webdriver.chrome.driver","/Users/kaydinnguyen/downloads/chromedriver");
             driver = new ChromeDriver();
 
         }
@@ -45,8 +45,8 @@ public class base {
         driver.get(prop.getProperty("url"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.findElement(By.name("email")).sendKeys("kaydin@dealtap.ca");
-        driver.findElement(By.name("password")).sendKeys("Abc12345");
+        driver.findElement(By.name("email")).sendKeys("agent1@dealtap.ca");
+        driver.findElement(By.name("password")).sendKeys("Dealtap1");
         driver.findElement(By.xpath("//div[text()='Log In']")).click();
         driver.findElement(By.xpath("//div[contains(text(),'Test: Manager')]")).click();
 
