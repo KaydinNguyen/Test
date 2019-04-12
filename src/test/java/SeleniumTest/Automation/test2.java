@@ -1,30 +1,28 @@
 package SeleniumTest.Automation;
 
 import org.testng.annotations.Test;
-import org.testng.xml.Parser;
-
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-
-import java.io.FileReader;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
-import org.jsoup.Jsoup;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.json.Json;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
+//import org.testng.xml.Parser;
+
+import com.google.gson.JsonParser;
 
 import resources.base;
 
@@ -38,65 +36,9 @@ public class test2 extends base {
         
        startBrowser();
        JavascriptExecutor js = (JavascriptExecutor) driver;
-       js.executeScript("window.qaRunSuites(['sign-up'])()");
+       js.executeScript("window.qaRunSuites(['fue'])()");
        getReports();
        
     }
     
-    public static void getReports() throws IOException {
-
-        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(60, TimeUnit.SECONDS)
-                .pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
-
-        WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
-            public WebElement apply(WebDriver driver) {
-            	return driver.findElement(By.xpath("//div[@class='testReport-caption']"));
-
-            }
-        });
-        WebElement tm = driver.findElement(By.xpath("//div[@class='testReport-caption']"));
-        WebElement tr = driver.findElement(By.id("dtTestResult"));
-        
-        if(tm.isDisplayed() ) {
-        	
-        	Object obj = new JsonParser().parse(tr.getAttribute("data-report"));
-        	obj.toString();
-        	
-        	JsonArray jo = (JsonArray) 
-        	
-        	
-        	
-        	
-        	
-        	
-        	
-        	
-        	
-        	
-        	
-//        	JsonObject jo = (JsonObject) obj; 
-//        	
-//        	JsonArray title = (JsonArray) jo.get("title");
-//        	
-//        	Iterator it = title.iterator();
-//        	
-//        	while(it.hasNext()) {
-//        		System.out.println(title);
-//        	}
-        	
-        	//String runID = (String) jo.get("runId").toString();
-//        	String title = (String) jo.get("title").toString();
-//        	
-//        	        	
-//        	System.out.println("runId" + " " + runID);
-//        	System.out.println("title" + " " + title);
-        	
-        	//System.out.println(Jsoup.parse(tr.getAttribute("data-report")));
-        	
-        	
-        	
-        	
-        }
-
-}}
-;
+    }
