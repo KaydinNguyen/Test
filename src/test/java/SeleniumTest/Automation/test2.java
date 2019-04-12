@@ -3,6 +3,9 @@ package SeleniumTest.Automation;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
@@ -38,6 +41,7 @@ public class test2 extends base {
        JavascriptExecutor js = (JavascriptExecutor) driver;
        js.executeScript("window.qaRunSuites(['fue'])()");
        getReports();
+       driver.close();
        
     }
     

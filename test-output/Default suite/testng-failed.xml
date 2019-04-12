@@ -5,7 +5,7 @@
     <classes>
       <class name="SeleniumTest.Automation.test2">
         <methods>
-          <include name="main"/>
+          <include name="getReports"/>
         </methods>
       </class> <!-- SeleniumTest.Automation.test2 -->
     </classes>

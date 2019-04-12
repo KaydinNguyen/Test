@@ -5,9 +5,15 @@
     <classes>
       <class name="SeleniumTest.Automation.test2">
         <methods>
+          <include name="startBrowser"/>
           <include name="getReports"/>
         </methods>
       </class> <!-- SeleniumTest.Automation.test2 -->
+      <class name="resources.base">
+        <methods>
+          <include name="getReports"/>
+        </methods>
+      </class> <!-- resources.base -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
