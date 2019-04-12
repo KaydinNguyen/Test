@@ -16,6 +16,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
@@ -43,23 +45,23 @@ public class base {
         return driver;
     }
     
-    
+   
     public static void startBrowser() throws IOException {
         driver = InitializeDriver();
         driver.get(prop.getProperty("url"));
         driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //        driver.findElement(By.name("email")).sendKeys("agent1@dealtap.ca");
 //        driver.findElement(By.name("password")).sendKeys("Dealtap1");
 //        driver.findElement(By.xpath("//div[text()='Log In']")).click();
 //        driver.findElement(By.xpath("//div[contains(text(),'Test: Manager')]")).click();
-
+        
     }
     
     public static WebElement runTest(By element) {
         return driver.findElement(element);
     }
-    @Test
+    
     public static void getReports() throws IOException {
 
         Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(60, TimeUnit.SECONDS)
