@@ -1,11 +1,8 @@
 package SeleniumTest.Automation;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 import java.io.IOException;
 import org.openqa.selenium.JavascriptExecutor;
-import org.testng.annotations.Test;
-
 import resources.base;
 
 
@@ -17,7 +14,7 @@ public class test2 extends base {
         
        startBrowser();
        JavascriptExecutor js = (JavascriptExecutor) driver;
-       js.executeScript("window.qaRunSuites(['fue'])()");
+       js.executeScript("window.qaRunSuites(['dashboard'])()");
        getReports();
        driver.close();
        
