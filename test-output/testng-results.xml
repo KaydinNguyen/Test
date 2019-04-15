@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12042" started-at="2019-04-15T03:23:36Z" finished-at="2019-04-15T03:23:48Z">
+  <suite name="Suite" duration-ms="10265" started-at="2019-04-15T03:34:06Z" finished-at="2019-04-15T03:34:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12042" started-at="2019-04-15T03:23:36Z" finished-at="2019-04-15T03:23:48Z">
+    <test name="Test" duration-ms="10265" started-at="2019-04-15T03:34:06Z" finished-at="2019-04-15T03:34:16Z">
       <class name="SeleniumTest.Automation.test2">
-        <test-method status="PASS" signature="fue()[pri:0, instance:SeleniumTest.Automation.test2@6c3708b3]" name="fue" duration-ms="12020" started-at="2019-04-15T03:23:36Z" finished-at="2019-04-15T03:23:48Z">
+        <test-method status="PASS" signature="fue()[pri:0, instance:SeleniumTest.Automation.test2@6c3708b3]" name="fue" duration-ms="10245" started-at="2019-04-15T03:34:06Z" finished-at="2019-04-15T03:34:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fue -->
       </class> <!-- SeleniumTest.Automation.test2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
