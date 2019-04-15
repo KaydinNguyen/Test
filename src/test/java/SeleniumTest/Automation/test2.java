@@ -1,13 +1,17 @@
 package SeleniumTest.Automation;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.Test;
+
 import resources.base;
 
 
 public class test2 extends base {
     
-    public static void main(String[] args) throws IOException {
+	@Test
+    public void fue() throws IOException {
         // TODO Auto-generated method stub
         
        startBrowser();
