@@ -31,7 +31,7 @@ public class base {
 
         {
 //        	WebDriverManager.
-            System.setProperty("webdriver.chrome.driver","/Users/kaydinnguyen/downloads/chromedriver");
+            System.setProperty("webdriver.chrome.driver","/Users/Shared/Jenkins/Home/workspace/chromedriver");
             driver = new ChromeDriver();
 
         }
