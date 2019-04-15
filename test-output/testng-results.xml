@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11" started-at="2019-04-12T15:15:02Z" finished-at="2019-04-12T15:15:02Z">
+  <suite name="Default suite" duration-ms="12042" started-at="2019-04-15T03:23:36Z" finished-at="2019-04-15T03:23:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11" started-at="2019-04-12T15:15:02Z" finished-at="2019-04-12T15:15:02Z">
+    <test name="Default test" duration-ms="12042" started-at="2019-04-15T03:23:36Z" finished-at="2019-04-15T03:23:48Z">
+      <class name="SeleniumTest.Automation.test2">
+        <test-method status="PASS" signature="fue()[pri:0, instance:SeleniumTest.Automation.test2@6c3708b3]" name="fue" duration-ms="12020" started-at="2019-04-15T03:23:36Z" finished-at="2019-04-15T03:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fue -->
+      </class> <!-- SeleniumTest.Automation.test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
