@@ -32,7 +32,7 @@ public class base {
 
 		{
 			//System.setProperty("webdriver.chrome.driver", "/Users/Shared/Jenkins/Home/workspace/chromedriver");
-			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/chromedriver");
 			driver = new ChromeDriver();
 
 		}
