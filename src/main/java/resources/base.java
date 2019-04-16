@@ -31,8 +31,8 @@ public class base {
 		if (browserName.equals("chrome"))
 
 		{
-			//System.setProperty("webdriver.chrome.driver", "/Users/Shared/Jenkins/Home/workspace/chromedriver");
-			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/Shared/Jenkins/Home/workspace/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/chromedriver");
 			driver = new ChromeDriver();
 
 		}
