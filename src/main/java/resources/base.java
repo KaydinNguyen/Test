@@ -62,7 +62,7 @@ public class base {
 
 	public static void getReports() throws IOException {
 
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(60, TimeUnit.SECONDS)
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(600, TimeUnit.SECONDS)
 				.pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
 
 		WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
